@@ -4,7 +4,7 @@
 var LoggingLevel = "FULL";
 
 function Log(message,debugLevel){
-	if(LoggingLevel == "Full"){
+	if(LoggingLevel == "FULL"){
 		console.log(message);
 	}else if(debugLevel != null){
 		for(var i = 0; i < LoggingLevel.length; i++){
@@ -15,4 +15,10 @@ function Log(message,debugLevel){
 			}
 		}
 	}
+}
+
+
+
+function rnd(x,y){
+	return Math.floor(x + Math.random()*(y - x));
 }
